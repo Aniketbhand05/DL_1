@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 # from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
-model = tf.keras.models.load_model("my_model.hdf5")
+model = tf.keras.models.load_model("my_model_new.hdf5")
 ### load file
 st.title("Animal Prediction using :green[CNN VGG16] Transfer Learning Architecture")
 st.markdown("Upload the image of the animlas :green[[Leopard, Lion, Elephant, Wolf, Bear]]")
