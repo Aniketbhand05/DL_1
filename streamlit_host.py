@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 # from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
-model = tf.keras.models.load_model("my_model_new.hdf5")
+model = tf.keras.models.load_model("my_model_new_new_using_for_loop_final.hdf5")
 ### load file
 st.title("Animal Prediction using :green[CNN VGG16] Transfer Learning Architecture")
 st.markdown("Upload the image of the animlas :green[[Leopard, Lion, Elephant, Wolf, Bear]]")
@@ -30,24 +30,24 @@ if uploaded_file is not None:
     if Genrate_pred:
         prediction = model.predict(resized_tensor)
         if(prediction[0][0] == 1):
-            st.markdown("Predicted animal in the image may be :green[Bear]")
+            st.markdown("Predicted animal in the image can be :green[Bear]")
             st.success("The Accuracy of the Deep Learning CNN VGG16 transfer learning model is : ")
             st.image('https://i.postimg.cc/XqWJwJM8/Accuracy.png')
             
         if(prediction[0][1] == 1):
-            st.markdown("Predicted animal in the image may be :green[Elephant]")
+            st.markdown("Predicted animal in the image can be :green[Elephant]")
             st.success("The Accuracy of the Deep Learning CNN VGG16 transfer learning model is : ")
             st.image('https://i.postimg.cc/XqWJwJM8/Accuracy.png')
         if(prediction[0][2] == 1):
-            st.markdown("Predicted animal in the image may be :green[Leopard]")
+            st.markdown("Predicted animal in the image can be :green[Leopard]")
             st.success("The Accuracy of the Deep Learning CNN VGG16 transfer learning model is : ")
             st.image('https://i.postimg.cc/XqWJwJM8/Accuracy.png')
         if(prediction[0][3] == 1):
-            st.markdown("Predicted animal in the image may be :green[Lion]")
+            st.markdown("Predicted animal in the image can be :green[Lion]")
             st.success("The Accuracy of the Deep Learning CNN VGG16 transfer learning model is : ")
             st.image('https://i.postimg.cc/XqWJwJM8/Accuracy.png')
         if(prediction[0][4] == 1):
-            st.markdown("Predicted animal in the image may be :green[Wolf]") 
+            st.markdown("Predicted animal in the image can be :green[Wolf]") 
             st.success("The Accuracy of the Deep Learning CNN VGG16 transfer learning model is : ")
             st.image('https://i.postimg.cc/XqWJwJM8/Accuracy.png')
             
